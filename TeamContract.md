@@ -37,7 +37,7 @@ This contract sets out shared expectations and commitments for how our team will
 
 ## Decision Making
 
-* How will decisions about your team project be made? (Examples: By majority vote, by unanimous vote, etc.)
+* For all important decisions (project direction, meeting time), ask if anyone objects. If two or more two members object, then group should discuss other options or make compromises. 
 
 ---
 ## Conflict resolution
@@ -48,7 +48,7 @@ This contract sets out shared expectations and commitments for how our team will
 
 ## Accountability
 
-* Reliability and accountability are also important aspects of teamwork. What are the responsibilities of each team member? (Example: completing their share of the work in a timely manner, seeking assistance from teammates/TAs/instructors when required, etc.)
+* Each team member is expected to their fair share of work on the project, in labs, and on class worksheets. If one member feels another is not doing enough, they may raise the issue to the group, where it can be discussed.
 
 ---
 
@@ -58,4 +58,8 @@ By signing below, we acknowledge that we have read, discussed, and agreed to the
 
 Team Member Signatures:
 
-(type names here)
+Darwin Rescorla
+Sicheng "The Dawg" Jiang
+Jonah Kwok
+Paanini Kartik
+Greg Guevara
