@@ -42,9 +42,9 @@ This contract sets out shared expectations and commitments for how our team will
 ---
 ## Conflict resolution
 
-* When coming into dispute, the team will attempt to listen to either side's position and try to meet in the middle online
-  If still in disagreement, arrange an in person meeting, possibly in lab or in lecture time or outside of it
-  If conflict still not resolved, mediate via a TA
+* When coming into dispute, the team will attempt to listen to either side's position and try to meet in the middle online 
+* If still in disagreement, arrange an in person meeting, possibly in lab or in lecture time or outside of it 
+* If conflict still not resolved, mediate via a TA
 ---
 
 ## Accountability
