@@ -18,14 +18,13 @@ This contract sets out shared expectations and commitments for how our team will
 
 ### Communication
 
-* Which platform will you use for communication outside of class, when required for work on your course project? (Examples: Text message, Discord, WeChat, etc.)
+* We will use iMessages to communicate.
 
-* Each teammate agrees to respond to messages in at most how long? 1 day? 2 days? Some other amount of time? 
+* Barring emergencies, we expect messages to be responded to within a day. 
 
-* What things should a teammate notify you about? (Examples: if they think they won't be able to meet a deadline, if they have to miss lecture, etc.)
+* Teammates should notify everyone when they are missing labs, lectures, or deadlines (whether set by the course or the team).
 
-* Respectful and inclusive behaviour are necessary for smooth and productive communication. What are some respectful and inclusive behaviours you expect when communicating with each other during lectures, labs, or outside of class? (Examples: Actively listening to each team members ideas, giving everyone a chance to meaningfully contribute, etc.)
-
+* Everyone should have the chance to contribute equally to discussions and the project. Furthermore, criticism should be constructive and from a place of seeking improvement. 
 ---
 
 ### [Other Categories of norms and expectations go here]
@@ -37,20 +36,19 @@ This contract sets out shared expectations and commitments for how our team will
 
 ## Decision Making
 
-* How will decisions about your team project be made? (Examples: By majority vote, by unanimous vote, etc.)
+* For all important decisions (project direction, meeting time), ask if anyone objects. If two or more two members object, then group should discuss other options or make compromises. 
 
 ---
 ## Conflict resolution
 
-* When coming into dispute, the team will attempt to listen to either side's position and try to meet in the middle online
-* If still in disagreement, arrange an in person meeting, possibly in lab or in lecture time or outside of it
-* If conflict still not resolve, mediate via a TA
-
+* When coming into dispute, the team will attempt to listen to either side's position and try to meet in the middle online 
+* If still in disagreement, arrange an in person meeting, possibly in lab or in lecture time or outside of it 
+* If conflict still not resolved, mediate via a TA
 ---
 
 ## Accountability
 
-* Reliability and accountability are also important aspects of teamwork. What are the responsibilities of each team member? (Example: completing their share of the work in a timely manner, seeking assistance from teammates/TAs/instructors when required, etc.)
+* Each team member is expected to their fair share of work on the project, in labs, and on class worksheets. If one member feels another is not doing enough, they may raise the issue to the group, where it can be discussed.
 
 ---
 
@@ -60,4 +58,8 @@ By signing below, we acknowledge that we have read, discussed, and agreed to the
 
 Team Member Signatures:
 
-(type names here)
+Darwin Rescorla
+Sicheng "The Dawg" Jiang
+Jonah Kwok
+Paanini Kartik
+Greg Guevara
