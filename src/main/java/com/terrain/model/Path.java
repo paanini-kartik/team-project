@@ -5,8 +5,8 @@ import java.util.*;
 
 
 public class Path {
-    private int[] start;
-    private int[] end;
+    private final int[] start;
+    private final int[] end;
     private int width;
 
     public Path(int[] start, int[] end, int width) {
