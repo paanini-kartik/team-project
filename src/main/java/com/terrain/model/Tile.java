@@ -3,6 +3,10 @@ package com.terrain.model;
 public class Tile {
     private double elevation;
 
+    public Tile() {
+        elevation = 0;
+    }
+
     public double getElevation() {
         return elevation;
     }
