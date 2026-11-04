@@ -20,27 +20,31 @@ public class Path {
         random.setSeed(seed);
         int[] curr = start.clone();
         ArrayList<int[]> path = new ArrayList<>();
-        System.out.println(map.getTile(curr[0], curr[1]).getElevation());
         while (curr[0] != end[0] || curr[1] != end[1]) {
-            path.add(curr.clone());
-            int dir = random.nextInt(100);
             int xdir = end[0]-curr[0];
             int ydir = end[1]-curr[1];
-            if (xdir > 0) {
-                curr[0] += 1;
+            boolean moveX;
+            if (xdir == 0) {
+                moveX = false;
+            } else if (ydir == 0) {
+                moveX = true;
+            } else {
+                moveX = random.nextInt(Math.abs(xdir) + Math.abs(ydir)) < Math.abs(xdir);
             }
-            if (ydir > 0) {
-                curr[1] += 1;
+            if (moveX) {
+                curr[0] += Integer.signum(xdir);
+            } else {
+                curr[1] += Integer.signum(ydir);
             }
-        }
-        for (int[] p : path) {
-            System.out.println(Arrays.toString(p));
+            path.add(curr.clone());
         }
         return path;
     }
 
     public static void main(String[] args) {
-        Path path = new Path(new int[]{0, 0}, new int[]{420, 10}, 3);
-        System.out.println(path.generate(42, new TerrainMap(1024,1024)));
+        Path path = new Path(new int[]{0, 0}, new int[]{420, 100}, 3);
+        for (int[] p : path.generate(42, new TerrainMap(1024,1024))) {
+            System.out.println(Arrays.toString(p));
+        }
     }
 }
