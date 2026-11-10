@@ -13,13 +13,13 @@ Application to generate seeded terrain guided by user input. (Working descriptio
 
 ---
 ## User Stories
-### Paanini: As a user who values realism, I want the final generated product to be realistic and transition between different geographic features to be seamless.
+### Paanini: As a user who values realism, I want the final generated product to be realistic and transition between different geographic features seamlessly, avoiding nonsensical features like trees above a certain altitude or trees where water already exists.
 ### Jonah: As an environmental architect, I want to be able to add custom geographic features (e.g. forests, savannahs, swamps, rivers) to the terrain, so that I can visualize what a terrain looks like when terraformed.
 ### User Story 3
 (Add additional user stories as needed.)
 ---
 ## Use Cases
-### Final smoothing (working title for the seamless transition user story)
+### Final smoothing and logic to resolve conflicting tiling (working title for the seamless transition user story)
 ### Transform tiles based on the geographic features given (Feature to Type)
 ### Use Case 3
 (Add additional use cases as needed.)
