@@ -33,13 +33,16 @@ public class LakeFeature extends Feature {
             for (int mapY = 0; mapY < height; mapY++) {
                 double distanceFromCenter = getDistance(x, y, mapX, mapY);
 
-                // Reduce tree density if point is far away from the center; based on smoothness
+                // Reduce water depth if point is far away from the center; based on smoothness
+                // NOTE: Completely untested lol!!!! wish me luck
                 if (distanceFromCenter > r * sm) {
                     d = d / (r * (sm - 1)) * distanceFromCenter + d; // literally y = mx + c
                 }
 
-                map.getTile(mapX, mapY).setElevation(map.getTile(mapX, mapY).getElevation() - d);
-                map.getTile(mapX, mapY).addTileType(TileType.WATER);
+                if (distanceFromCenter < r) {
+                    map.getTile(mapX, mapY).setElevation(map.getTile(mapX, mapY).getElevation() - d);
+                    map.getTile(mapX, mapY).addTileType(TileType.WATER);
+                }
             }
         }
     }
