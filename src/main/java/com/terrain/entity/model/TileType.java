@@ -8,5 +8,7 @@ public enum TileType {
     SNOW,
     FOREST,
     SWAMP,
+    BLANK,
 }
     // Add more types as needed
+    // Not sure if the swamp type is needed for now though

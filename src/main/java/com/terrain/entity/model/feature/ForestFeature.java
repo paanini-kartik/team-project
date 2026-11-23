@@ -3,6 +3,7 @@ package com.terrain.entity.model.feature;
 import java.util.Random;
 
 import com.terrain.entity.model.TerrainMap;
+import com.terrain.entity.model.TileType;
 import com.terrain.entity.model.feature.parameter.CoordinateParameter;
 import com.terrain.entity.model.feature.parameter.NumberParameter;
 
@@ -24,8 +25,6 @@ public class ForestFeature extends Feature {
         double sm = smoothness.getValue();
         double x = location.getX();
         double y = location.getY();
-        
-        // TODO: apply forest 
 
         int width = map.getWidth();
         int height = map.getHeight();
@@ -40,6 +39,7 @@ public class ForestFeature extends Feature {
                 }
 
                 map.getTile(mapX, mapY).setTreeDensity(td);
+                map.getTile(mapX, mapY).addTileType(TileType.FOREST);
             }
         }
     }
