@@ -38,8 +38,10 @@ public class ForestFeature extends Feature {
                     td = td / (r * (sm - 1)) * distanceFromCenter + td; // literally y = mx + c
                 }
 
-                map.getTile(mapX, mapY).setTreeDensity(td);
-                map.getTile(mapX, mapY).addTileType(TileType.FOREST);
+                if (distanceFromCenter < r) {
+                    map.getTile(mapX, mapY).setTreeDensity(td);
+                    map.getTile(mapX, mapY).addTileType(TileType.FOREST);
+                }
             }
         }
     }

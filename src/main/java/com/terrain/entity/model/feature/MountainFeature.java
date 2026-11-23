@@ -32,11 +32,13 @@ public class MountainFeature extends Feature {
             for (int mapY = 0; mapY < height; mapY++) {
                 double distanceFromCenter = getDistance(px, py, mapX, mapY);
 
-                double interpolatedElevation = distanceFromCenter / r * h;
+                if (distanceFromCenter < r) {
+                    double interpolatedElevation = distanceFromCenter / r * h;
 
-                double elevation = Math.max(map.getTile(mapX, mapY).getElevation(), interpolatedElevation);
+                    double elevation = Math.max(map.getTile(mapX, mapY).getElevation(), interpolatedElevation);
 
-                map.getTile(mapX, mapY).setElevation(elevation);
+                    map.getTile(mapX, mapY).setElevation(elevation);
+                }
             }
         }
     }
