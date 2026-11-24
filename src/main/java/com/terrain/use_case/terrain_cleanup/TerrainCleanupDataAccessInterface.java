@@ -4,6 +4,7 @@ import com.terrain.entity.model.TerrainMap;
 
 /**
  * What the terrain cleanup use case needs from storage. Implemented in data_access.
+ * This might end up being removed if inputdata later contains the terrainmap and the current terrain in question is kept in memory
  */
 public interface TerrainCleanupDataAccessInterface {
 
