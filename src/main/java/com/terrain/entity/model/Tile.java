@@ -10,8 +10,6 @@ public class Tile {
 
     public Tile() {
         elevation = 0;
-        color = "008000";
-        treeDensity = 0.0;
     }
 
     public double getElevation() {
@@ -22,20 +20,13 @@ public class Tile {
         this.elevation = elevation;
     }
 
-    public String getColor() {
-        return color;
+    public List<TileType> getType() {
+        return type;
     }
 
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public double getTreeDensity() {
-        return treeDensity;
-    }
-
-    public void setTreeDensity(double treeDensity) {
-        this.treeDensity = treeDensity;
+    public void setType(TileType type) {
+        // this.type = type;
+        return;
     }
 
     public void addTileType(TileType type) {
@@ -44,6 +35,14 @@ public class Tile {
 
     public List<TileType> getTileType() {
         return type;
+    }
+
+    public void setTreeDensity(double treeDensity) {
+        this.treeDensity = treeDensity;
+    }
+
+    public double getTreeDensity() {
+        return treeDensity;
     }
 
     // TODO: MAYBE: Add other properties like moisture, temperature, etc. depending on the needs of the terrain
