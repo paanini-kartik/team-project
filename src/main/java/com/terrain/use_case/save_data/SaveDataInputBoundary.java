@@ -6,6 +6,6 @@ import java.io.File;
 import java.io.IOException;
 
 public interface SaveDataInputBoundary {
-    void save(TerrainMap map, File file) throws IOException;
-    TerrainMap load(File file);
+    void save(TerrainMap map, File file);
+    void load(File file);
 }

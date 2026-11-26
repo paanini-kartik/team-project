@@ -10,6 +10,7 @@ import com.terrain.entity.model.feature.Feature;
 import com.terrain.entity.model.feature.FeatureType;
 import com.terrain.generation.WorldSetting;
 
+import java.io.File;
 import java.util.function.Consumer;
 
 // A panel that displays the settings for the terrain generator, including the world size and the list of features.
@@ -28,6 +29,8 @@ public class SettingsPanel extends VBox {
     private Consumer<FeatureType> onAddFeature = type -> {
     };
     private Consumer<Feature> onRemoveFeature = feature -> {
+    };
+    private Consumer<File> onSave = file -> {
     };
 
     // a runnable is a function that takes no arguments and returns nothing
@@ -80,6 +83,10 @@ public class SettingsPanel extends VBox {
 
     public void setOnRemoveFeature(Consumer<Feature> onRemoveFeature) {
         this.onRemoveFeature = onRemoveFeature;
+    }
+
+    public void setOnSave(Consumer<File> onSave) {
+        this.onSave = onSave;
     }
 
     // call controller's onGenerate when "Generate" is pressed
