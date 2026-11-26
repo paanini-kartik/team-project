@@ -13,6 +13,14 @@ import com.terrain.entity.model.feature.parameter.ParameterSet;
 public abstract class Feature extends ParameterSet {
     public abstract String getName();
 
+    // a feature that implements BlobShaped will use these parameters as well
+    protected final BlobParameters createBlobParameters() {
+        return new BlobParameters(
+                number("Radius", 50, 1, 500),
+                number("Noise Amplitude", 50.0, 0.0, 100.0),
+                number("Noise Scale", 30.0, 0.01, 100.0));
+    }
+
     // Must take all randomness from `random` (never Math.random()) so the same seed gives the same map.
     public abstract void apply(TerrainMap map, Random random);
 
@@ -23,5 +31,9 @@ public abstract class Feature extends ParameterSet {
                 coordinate.setMapSize(width, height);
             }
         }
+    }
+
+    public static double getDistance(double x1, double y1, double x2, double y2) {
+        return Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2));
     }
 }
