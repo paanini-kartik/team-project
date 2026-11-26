@@ -13,12 +13,13 @@ import java.io.File;
 
 public class SaveDataController {
     private final SaveDataInputBoundary saveDataInteractor;
-    private final TerrainGenerator terrainGenerator = new TerrainGenerator();
+    private final TerrainGenerator generator = new TerrainGenerator();
     private final TerrainMap map;
 
     public SaveDataController(SaveDataInputBoundary saveDataInteractor, GenerationSettings settings) {
         this.saveDataInteractor = saveDataInteractor;
-        this.map = terrainGenerator.generate(settings);
+        generator.generate(settings);
+        this.map = generator.map;
     }
 
     public void onSave(File file) {
